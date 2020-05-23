@@ -28,7 +28,7 @@ const Links = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-facebook"></i>
+            <i className="fab fa-facebook"></i>
           </a>
         </li>
       </ul>
