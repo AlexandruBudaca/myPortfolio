@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
+import "./Glitch.css";
+import Header from "../src/Components/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Alexandru Budaca</h1>
-        <p>Web Developer</p>
-      </header>
+      <Header />
     </div>
   );
 }
