@@ -14,7 +14,7 @@ const Header = () => {
           <div className="glitchit"></div>
         </div>
       </div>
-      <h2 className="hello">Hy,</h2>
+      <h2 className="hello">Hi,</h2>
       <TypeWrite />
       <Links />
     </header>

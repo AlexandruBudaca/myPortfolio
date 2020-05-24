@@ -18,6 +18,7 @@
     background-size: cover;
     transform: translate3d(0, 0, 0);
     background-blend-mode: var(--blend-mode-1);
+    background-attachment: fixed;
 }
 
 .glitchit:nth-child(n + 2) {
@@ -28,7 +29,7 @@
     animation-duration: var(--time-anim);
     animation-delay: var(--delay-anim);
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 .glitchit:nth-child(2) {
