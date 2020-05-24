@@ -14,12 +14,12 @@ const Logos = () => {
           alt="bootstrap"
         />
         <img
-          src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
-          alt="react"
-        />
-        <img
           src="https://cdn.worldvectorlogo.com/logos/javascript.svg"
           alt="javascript"
+        />
+        <img
+          src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
+          alt="react"
         />
       </div>
     </div>
