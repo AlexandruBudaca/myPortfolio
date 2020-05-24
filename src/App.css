@@ -82,27 +82,25 @@ i:hover {
 
 .use-div {
   margin-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-
-}
-
-.use-div h1 {
-  font-size: 2rem;
 }
 
 .logos {
-  width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .logos img {
   width: 75px;
   height: 75px;
-  margin: 50px;
+  padding: 10px;
 }
 
 .projects {
+  margin-top: 100px;
   height: 1000px;
 }
 
