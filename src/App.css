@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   color: whitesmoke;
-
 }
 
 .App-header {
@@ -22,9 +21,10 @@
 }
 
 .title {
-  margin-left: 150px;
+  margin-left: 100px;
   margin-top: 10px;
   z-index: 1;
+  font-size: 40px;
 }
 
 span {
@@ -32,8 +32,9 @@ span {
 }
 
 .hello {
-  margin-left: 150px;
+  margin-left: 100px;
   margin-bottom: 1px;
+  font-size: 30px;
 }
 
 li {
@@ -43,7 +44,7 @@ li {
 
 .links {
   z-index: 1;
-  margin-left: 140px;
+  margin-left: 90px;
 }
 
 ul {
@@ -63,19 +64,24 @@ i:hover {
 .about {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 50px;
+}
+
+.img-div-about {
+  width: 100%;
 }
 
 .img-about {
-  width: 300px;
-  height: 300px;
-  margin-top: 100px;
+  width: 900px;
+  height: 500px;
 }
 
 .about-content {
   width: 500px;
   text-align: left;
-  margin-top: 100px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -107,13 +113,39 @@ i:hover {
 @media (max-width: 500px) {
   .title {
     margin-left: 10px;
+    font-size: 30px;
   }
 
   .hello {
     margin-left: 10px;
+    font-size: 25px;
   }
 
   .links {
     margin: 5px;
+  }
+
+  .links ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-left: 20px;
+    font-size: 40px;
+  }
+
+  .hello {
+    margin-left: 20px;
+    font-size: 30px;
+  }
+
+  .links {
+    margin: 10px;
+  }
+
+  .links ul {
+    flex-direction: column;
   }
 }
