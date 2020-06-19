@@ -3,8 +3,7 @@
 }
 
 .App-header {
-  background: url("./Je-background-copy.png") repeat scroll center center /
-    cover;
+  background: url("./Je-background.png") repeat scroll center center / cover;
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -152,7 +151,7 @@ section h1 {
   }
 
   .img-about {
-    width: 350px;
+    width: 450px;
   }
 
   section hr {
