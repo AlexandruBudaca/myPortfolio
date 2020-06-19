@@ -22,7 +22,7 @@ const About = () => {
               "Ice Felix HC-85"
             </a>{" "}
             back in my kinder garden. On the road I made some turns and I end up
-            with an Master Degree in drama-acting, I did some stops in
+            with a Master Degree in drama-acting, I did some stops in
             televisions and companies as a video editor or graphic designer. The
             final destination is here in London where I’m a trainee Full Stack
             Developer at Code Your Future. Where I found that the web
