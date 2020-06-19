@@ -32,7 +32,7 @@ const About = () => {
             time I’m doing my HND in computing at Icon College learning Python,
             and I’m still enthusiastically into grabbing any other programming
             languages, frameworks, or principles I can interpret into coding web
-            in my head. <br />I can wait to create for the real world.
+            in my head. <br />
           </p>
         </div>
       </div>
