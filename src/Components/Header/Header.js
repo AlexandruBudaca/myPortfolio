@@ -5,16 +5,7 @@ import TypeWrite from "./TypeWriter";
 const Header = () => {
   return (
     <header className="App-header">
-      <div className="content">
-        <div className="glitch">
-          <div className="glitchit"></div>
-          <div className="glitchit"></div>
-          <div className="glitchit"></div>
-          <div className="glitchit"></div>
-          <div className="glitchit"></div>
-        </div>
-      </div>
-      <h2 className="hello">Hi,</h2>
+      <h2 className="hi">Hi,</h2>
       <TypeWrite />
       <Links />
     </header>

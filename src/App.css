@@ -1,10 +1,10 @@
 .App {
-  text-align: center;
   color: whitesmoke;
 }
 
 .App-header {
-  background-color: #000;
+  background: url("./Je-background-copy.png") repeat scroll center center /
+    cover;
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -13,28 +13,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-
-}
-
-.content {
-  display: flex;
-}
-
-.title {
-  margin-left: 100px;
-  margin-top: 10px;
-  z-index: 1;
-  font-size: 40px;
 }
 
 span {
-  color: var(--blend-color-2);
-}
-
-.hello {
-  margin-left: 100px;
-  margin-bottom: 1px;
-  font-size: 30px;
+  color: #77b163;
 }
 
 li {
@@ -44,7 +26,7 @@ li {
 
 .links {
   z-index: 1;
-  margin-left: 90px;
+  margin-left: 40px;
 }
 
 ul {
@@ -54,90 +36,139 @@ ul {
 
 i {
   font-size: 28px;
-  color: var(--blend-color-2);
+  color: #77b163;
 }
 
 i:hover {
-  color: var(--blend-color-5);
+  color: white;
 }
-
+.title {
+  margin-left: 50px;
+}
+.hi {
+  margin-left: 50px;
+}
 .about {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   align-content: center;
   margin-top: 50px;
 }
+.about-me {
+  margin-left: 120px;
+}
+section hr {
+  margin: auto;
+  border: 1px solid #77b163;
+  margin-left: 100px;
+  margin-right: 100px;
+}
 
-
+section h1 {
+  margin-bottom: 20px;
+}
 .img-about {
-  width: 900px;
-  height: 500px;
+  width: 500px;
 }
 
 .about-content {
-  width: 500px;
+  width: 600px;
   text-align: left;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 30px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+.about-content a {
+  color: #77b163;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.use-div {
-  margin-top: 100px;
+.projects hr {
+  margin: auto;
+  border: 1px solid #77b163;
+  margin-left: 100px;
+  margin-right: 100px;
 }
-
-.logos {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.logos img {
-  width: 75px;
-  height: 75px;
-  padding: 10px;
-}
-
 .projects {
   margin-top: 100px;
   height: 1000px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   .title {
     margin-left: 10px;
     font-size: 30px;
   }
-
-  .hello {
+  .hi {
     margin-left: 10px;
-    font-size: 25px;
   }
-
   .links {
-    margin: 5px;
+    margin-left: 15px;
   }
 
   .links ul {
     flex-direction: column;
   }
+  .img-about {
+    width: 350px;
+  }
+  .projects hr {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  section hr {
+    margin: auto;
+    border: 1px solid #77b163;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .about-me {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .title {
-    margin-left: 20px;
-    font-size: 40px;
-  }
-
-  .hello {
     margin-left: 20px;
     font-size: 30px;
   }
 
+  .hi {
+    margin-left: 20px;
+  }
+
+  .links {
+    margin-left: 25px;
+  }
+
+  .links ul {
+    flex-direction: column;
+  }
+
+  .img-about {
+    width: 350px;
+  }
+
+  section hr {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .projects hr {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .about-me {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
   .links {
     margin: 10px;
   }

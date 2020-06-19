@@ -1,29 +1,39 @@
 import React from "react";
-import aboutImg from "../../JeOld.png";
+import aboutImg from "../../je-mic.png";
 
 const About = () => {
   return (
-    <section>
+    <section className="container">
+      <h2 className="about-me">About Me</h2>
+      <hr />
       <div className="about">
         <div className="img-div-about">
           <img className="img-about" src={aboutImg} alt="profile" />
         </div>
-
         <div className="about-content">
           <h1>Who am I?</h1>
-          <h2>An actor who plays with technology!</h2>
           <p>
-            If you know already that I am an actor, that means that you know the
-            story, but what you don't know it's how it ends. I've studied acting
-            since I was in the middle school, but also I've always had a sort of
-            passion for technology. What had I done in this case? I've combined
-            both! So this is how I create my own universe of creation. I've
-            found that acting was the best way to feed my soul, but I realise
-            that I was also in needing for feeding my brain too. So you can say
-            that this was my way through video editing. Along this new skill
-            came out new ones, like graphics design and after that, web
-            developing. I will stop here? No way, be aware, I will learn
-            everything I can!
+            The journey started with an{" "}
+            <a
+              href="https://www.old-computers.com/museum/computer.asp?st=1&c=629"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              "Ice Felix HC-85"
+            </a>{" "}
+            back in my kinder garden. On the road I made some turns and I end up
+            with an Master Degree in drama-acting, I did some stops in
+            Televisions and companies as a video editor or graphic designer. The
+            web development incorporates all my passions: creativity, logic,
+            abstract thinking, problem solving and I’m allowed to break it to
+            improve the code (in separate Git branch, of course). The final
+            destination is here in London where I’m a trainee Full Stack
+            Developer at Code Your Future, where I learn HTML, CSS, JavaScript,
+            React, Node and MongoDB. In the same time I’m doing my HND in
+            computing at Icon College learning Python, and I’m still
+            enthusiastically into grabbing any other programming languages,
+            frameworks, or principles I can interpret into coding web in my
+            head. I can wait to create for the real world.
           </p>
         </div>
       </div>
