@@ -24,16 +24,15 @@ const About = () => {
             back in my kinder garden. On the road I made some turns and I end up
             with an Master Degree in drama-acting, I did some stops in
             Televisions and companies as a video editor or graphic designer. The
-            web development incorporates all my passions: creativity, logic,
+            final destination is here in London where I’m a trainee Full Stack
+            Developer at Code Your Future. Where I found that the web
+            development incorporates all my passions: creativity, logic,
             abstract thinking, problem solving and I’m allowed to break it to
-            improve the code (in separate Git branch, of course). The final
-            destination is here in London where I’m a trainee Full Stack
-            Developer at Code Your Future, where I learn HTML, CSS, JavaScript,
-            React, Node and MongoDB. In the same time I’m doing my HND in
-            computing at Icon College learning Python, and I’m still
-            enthusiastically into grabbing any other programming languages,
-            frameworks, or principles I can interpret into coding web in my
-            head. I can wait to create for the real world.
+            improve the code (in separate Git branch, of course). In the same
+            time I’m doing my HND in computing at Icon College learning Python,
+            and I’m still enthusiastically into grabbing any other programming
+            languages, frameworks, or principles I can interpret into coding web
+            in my head. <br />I can wait to create for the real world.
           </p>
         </div>
       </div>
