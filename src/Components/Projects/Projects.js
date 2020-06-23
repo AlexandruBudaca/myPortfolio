@@ -4,7 +4,9 @@ import CardProject from "./CardProject";
 const Projects = () => {
   return (
     <div className="projects-main">
-      <h2>Projects ></h2>
+      <h2>
+        Projects <span>></span>
+      </h2>
       <hr />
       <div className="projects">
         <div className="container-projects">

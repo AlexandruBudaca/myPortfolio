@@ -99,11 +99,9 @@ section h1 {
 }
 .projects {
   margin-top: 50px;
-  height: 100vh;
+  height: 100%;
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
 }
 .projects img {
@@ -122,9 +120,10 @@ section h1 {
   height: 360px;
   display: flex;
   flex-direction: column;
-  background-color: #333;
+  background-color: #111;
   margin-top: 20px;
   margin: 20px;
+  box-shadow: 3px 3px 6px #1e351c;
 }
 .card-project h4 {
   margin-top: 20px;
@@ -142,6 +141,71 @@ section h1 {
 .btn-card-project button {
   text-align: center;
   margin: 10px;
+}
+.contact-section {
+  height: 100%;
+}
+.contact-section hr {
+  margin: auto;
+  border: 1px solid #77b163;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.contact-section h2 {
+  margin-left: 120px;
+  margin-top: 100px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.input-form {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: #111;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 400px;
+  box-shadow: 3px 3px 6px #1e351c;
+}
+.input-form input {
+  width: 600px;
+  padding: 20px;
+  margin-top: 20px;
+  outline: none;
+}
+.input-form button {
+  width: 100px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #77b163;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.input-form button:hover {
+  background-color: whitesmoke;
+  color: #77b163;
+  transform: scale(1.1);
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: #111;
+  bottom: 0;
+  margin-top: 100px;
+  color: #77b163;
+}
+.footer img {
+  width: 50px;
 }
 @media (max-width: 375px) {
   .title {
@@ -161,19 +225,40 @@ section h1 {
   .img-about {
     width: 350px;
   }
-  .projects hr {
+  .projects-main hr {
     margin-left: 20px;
     margin-right: 20px;
   }
   section hr {
-    margin: auto;
-    border: 1px solid #77b163;
     margin-left: 20px;
     margin-right: 20px;
   }
   .about-me {
     margin-top: 30px;
     margin-left: 20px;
+  }
+  .contact-section hr {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .contact-section h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .projects-main hr {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .projects-main h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .input-form {
+    width: 250px;
+    height: 400px;
+  }
+  .input-form input {
+    width: 200px;
   }
 }
 
@@ -203,12 +288,32 @@ section h1 {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .projects hr {
+  .projects-main hr {
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .contact-section hr {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contact-section h2 {
+    margin-top: 30px;
+    margin-left: 20px;
   }
   .about-me {
     margin-top: 30px;
     margin-left: 20px;
+  }
+  .projects-main h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .input-form {
+    width: 350px;
+    height: 400px;
+  }
+  .input-form input {
+    width: 300px;
   }
 }

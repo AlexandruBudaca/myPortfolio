@@ -4,7 +4,9 @@ import aboutImg from "../../je-mic.png";
 const About = () => {
   return (
     <section className="container">
-      <h2 className="about-me">About Me ></h2>
+      <h2 className="about-me">
+        About Me <span>></span>
+      </h2>
       <hr />
       <div className="about">
         <div className="img-div-about">
