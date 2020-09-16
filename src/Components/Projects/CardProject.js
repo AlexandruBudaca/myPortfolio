@@ -1,12 +1,12 @@
 import React from "react";
 
-const CardProject = props => {
+const CardProject = (props) => {
   return (
     <div className="card-project">
       {" "}
       <img src={props.imgSrc} alt="project-img" />
       <div>
-        <h4>Countries</h4>{" "}
+        <h4>{props.name}</h4>{" "}
         <p>
           In publishing and graphic design, Lorem ipsum is a placeholder text
           commonly used to demonstrate.

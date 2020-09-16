@@ -1,0 +1,16 @@
+[{
+    "id": 1,
+    "imgSrc": "https://coryrylan.com/assets/images/posts/types/javascript-1280x960.png",
+    "name": "Project1",
+    "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate."
+}, {
+    "id": 2,
+    "imgSrc": "https://www.freecodecamp.org/news/content/images/2020/01/js-image.jpeg",
+    "name": "Project2",
+    "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate."
+}, {
+    "id": 3,
+    "imgSrc": "https://images.ctfassets.net/yr4qj72ki4ky/legacyBlogPost77Thumbnail/cd4783ad7b35efc4367166a570a9952e/bigstock-Real-Java-Script-Code-Developi-217215433.jpg",
+    "name": "Project3",
+    "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate."
+}]
