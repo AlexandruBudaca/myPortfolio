@@ -1,0 +1,33 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.about-me {
+    margin-left: 120px;
+}
+
+.img-about {
+    width: 100%;
+    opacity: 30%;
+}
+
+.about-content {
+    width: 600px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.about-content a {
+    color: #77b163;
+    text-decoration: none;
+    cursor: pointer;
+}

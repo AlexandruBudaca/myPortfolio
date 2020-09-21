@@ -2,6 +2,8 @@ import React from "react";
 import CardProject from "./CardProject";
 import data from "../../data.json";
 
+import "../Projects/projects.css";
+
 const Projects = () => {
   return (
     <div className="projects-main">

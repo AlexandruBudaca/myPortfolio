@@ -1,0 +1,74 @@
+.App-header {
+    background: url("../../assets/Je.png") repeat scroll center center / cover;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.home-terminal {
+    background: url("../../assets/terminal.png");
+    background-size: cover;
+    width: 1000px;
+    height: 100vh;
+}
+
+.type-write {
+    margin-top: 4.5em;
+}
+
+.type-write p {
+    font-size: 16px;
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+.type-write .title {
+    margin-left: 40px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+span {
+    color: #3ce800;
+}
+
+.blue {
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    opacity: 1;
+    color: #00D1FF;
+}
+
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+.links {
+    z-index: 1;
+    margin-left: 40px;
+}
+
+ul {
+    display: flex;
+    padding-inline-start: 0px;
+}
+
+li i {
+    font-size: 28px;
+    color: #77b163;
+}
+
+li i:hover {
+    color: white;
+}
+
+.hi {
+    margin-left: 50px;
+}
