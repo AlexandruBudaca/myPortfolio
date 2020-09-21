@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Typical from "react-typical";
 import moment from "moment";
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 import Write from "./Write";
 
 import "./header.css";
-const TypeWrite = (props) => {
+const TypeWrite = () => {
   var date = moment().format("LLLL");
   const [alex, setAlex] = useState(false);
   const [alex2, setAlex2] = useState(false);
@@ -16,7 +16,6 @@ const TypeWrite = (props) => {
     setTimeout(() => {
       setAlex(true);
     }, 2000);
-
     setTimeout(() => {
       setAlex2(true);
     }, 5000);
@@ -27,8 +26,7 @@ const TypeWrite = (props) => {
 
   return (
     <Row>
-      {console.log(alex)}
-      <Col className="type-write">
+      <div lg={12} className="type-write">
         <p>
           <Typical loop={1} wrapper={"span"} steps={`Last login: ${date}`} />
         </p>
@@ -49,7 +47,7 @@ const TypeWrite = (props) => {
             />
           </p>
         )}
-      </Col>
+      </div>
     </Row>
   );
 };

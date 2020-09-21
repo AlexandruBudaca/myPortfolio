@@ -1,6 +1,6 @@
 .App-header {
     background: url("../../assets/Je.png") repeat scroll center center / cover;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -8,17 +8,68 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+
 .home-terminal {
-    background: url("../../assets/terminal.png");
-    background-size: cover;
-    width: 1000px;
-    height: 100vh;
+    position: relative;
+}
+
+
+
+.home-terminal img {
+    width: 100%;
+    height: 70vh;
+
+}
+
+.terminal-head {
+    position: absolute;
+    top: 6px;
+    left: 35%;
+    color: #6A6A6A;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
 }
 
 .type-write {
-    margin-top: 4.5em;
+    position: absolute;
+    z-index: 10;
+    top: 2em;
+}
+
+.bubbles {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 0.5em;
+    margin-left: 20px;
+}
+
+.bubble1 {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bubble2 {
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bubble3 {
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
 }
 
 .type-write p {
