@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/terminal.png";
+import terminal_img from "../../assets/terminal.png";
 import home_img from "../../assets/home-directory.png";
 // import Links from "./Links";
 import TypeWrite from "./TypeWriter";
@@ -14,11 +14,15 @@ const Header = () => {
           <div className="bubble3"></div>
         </div>
         <div className="terminal-head">
-          <img src={home_img} style={{ width: "25px", height: "25px" }} />
+          <img
+            src={home_img}
+            style={{ width: "25px", height: "25px" }}
+            alt="home-logo"
+          />
           <p>--alexcomputer --zsh--</p>
         </div>
 
-        <img src={img} />
+        <img src={terminal_img} alt="terminal-img" />
         <TypeWrite />
       </div>
       {/* <Links /> */}

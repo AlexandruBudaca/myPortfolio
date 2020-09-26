@@ -1,49 +1,110 @@
-import React, { useState, useEffect } from "react";
-import Typical from "react-typical";
+import React, { useState } from "react";
 import moment from "moment";
 import { Row } from "react-bootstrap";
-
-import Write from "./Write";
+import Typewriter from "typewriter-effect";
 
 import "./header.css";
+
 const TypeWrite = () => {
   var date = moment().format("LLLL");
-  const [alex, setAlex] = useState(false);
-  const [alex2, setAlex2] = useState(false);
-  const [alex3, setAlex3] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setAlex(true);
-    }, 2000);
-    setTimeout(() => {
-      setAlex2(true);
-    }, 5000);
-    setTimeout(() => {
-      setAlex3(true);
-    }, 6000);
-  }, []);
+  const [showTyping, setShowTyping] = useState({
+    myName: false,
+    cd_mySkills: false,
+    mySkills: false,
+    frontend: false,
+  });
 
   return (
     <Row>
       <div lg={12} className="type-write">
         <p>
-          <Typical loop={1} wrapper={"span"} steps={`Last login: ${date}`} />
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .start()
+                .typeString(` Last login: ${date}`)
+                .callFunction(() => {
+                  setShowTyping((prevState) => ({
+                    ...prevState,
+                    myName: true,
+                  }));
+                });
+            }}
+            options={{
+              delay: 50,
+              wrapperClassName: "Typewriter__wrapper",
+            }}
+          />
         </p>
-        {alex && <Write />}
-        {alex2 && (
-          <p>
-            <Typical loop={1} wrapper={"span"} steps={["~ cd myproject"]} />
+
+        {showTyping.myName && (
+          <p className="terminal-name">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .start()
+                  .typeString(
+                    "Hi, I'm Alexandru Budaca!, I'm a full stack developer!"
+                  )
+                  .callFunction(() => {
+                    setShowTyping((prevState) => ({
+                      ...prevState,
+                      cd_mySkills: true,
+                    }));
+                  });
+              }}
+              options={{
+                delay: 50,
+                cursorClassName: "Typewriter__cursor",
+                wrapperClassName: "Typewriter__wrapper",
+              }}
+            />
           </p>
         )}
-        {alex3 && (
-          <p>
-            <span className="blue"> myproject</span>
 
-            <Typical
-              loop={1}
-              wrapper={"span"}
-              steps={[` npx create-react-app frontend`]}
+        {showTyping.cd_mySkills && (
+          <p>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .start()
+                  .typeString("cd mySkills")
+                  .callFunction(() => {
+                    setShowTyping((prevState) => ({
+                      ...prevState,
+                      mySkills: true,
+                    }));
+                  });
+              }}
+              options={{
+                delay: 50,
+                cursorClassName: "Typewriter__cursor",
+                wrapperClassName: "Typewriter__wrapper",
+              }}
+            />
+          </p>
+        )}
+
+        {showTyping.mySkills && (
+          <p>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .start()
+                  .pasteString("<span>mySkills</span>")
+                  .typeString(" npx create-react-app frontend")
+                  .callFunction(() => {
+                    setShowTyping((prevState) => ({
+                      ...prevState,
+                      frontend: true,
+                    }));
+                  });
+              }}
+              options={{
+                delay: 50,
+                cursorClassName: "Typewriter__cursor",
+                wrapperClassName: "Typewriter__wrapper",
+              }}
             />
           </p>
         )}

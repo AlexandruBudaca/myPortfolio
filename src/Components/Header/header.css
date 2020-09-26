@@ -1,125 +1,158 @@
 .App-header {
-    background: url("../../assets/Je.png") repeat scroll center center / cover;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+  background: url("../../assets/je_logos.jpg") repeat scroll center center /
+    cover;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
 
 .home-terminal {
-    position: relative;
+  position: relative;
 }
 
-
-
 .home-terminal img {
-    width: 100%;
-    height: 70vh;
-
+  width: 100%;
+  height: 70vh;
 }
 
 .terminal-head {
-    position: absolute;
-    top: 6px;
-    left: 35%;
-    color: #6A6A6A;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  top: 2px;
+  color: #6a6a6a;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  background-color: #6a6a6a;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 35px;
+}
+
+.terminal-head p {
+  position: absolute;
+  color: grey;
+  left: 40%;
+}
+
+.terminal-head img {
+  position: absolute;
+  color: grey;
+  left: 35%;
 }
 
 .type-write {
-    position: absolute;
-    z-index: 10;
-    top: 2em;
+  position: absolute;
+  z-index: 10;
+  top: 2em;
 }
 
 .bubbles {
-    display: flex;
-    position: absolute;
-    z-index: 10;
-    top: 0.5em;
-    margin-left: 20px;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  top: 0.5em;
+  margin-left: 20px;
 }
 
 .bubble1 {
-    width: 15px;
-    height: 15px;
-    background-color: red;
-    border-radius: 50%;
-    margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .bubble2 {
-    width: 15px;
-    height: 15px;
-    background-color: yellow;
-    border-radius: 50%;
-    margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .bubble3 {
-    width: 15px;
-    height: 15px;
-    background-color: green;
-    border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-radius: 50%;
 }
 
 .type-write p {
-    font-size: 16px;
-    margin-left: 40px;
-    padding-top: 10px;
+  font-size: 16px;
+  margin-left: 40px;
+  padding-top: 10px;
 }
 
 .type-write .title {
-    margin-left: 40px;
-    font-size: 20px;
-    padding-top: 10px;
+  margin-left: 40px;
+  font-size: 20px;
+  padding-top: 10px;
 }
 
-span {
-    color: #3ce800;
+p {
+  color: #3ce800;
 }
 
 .blue {
-    transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
-    opacity: 1;
-    color: #00D1FF;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 1;
+  color: #00d1ff;
 }
 
+.purple {
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 1;
+  color: #9e00ff;
+}
+
+.red {
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 1;
+  color: #da0000;
+}
+
+.Typewriter__wrapper span {
+  color: #00d1ff;
+}
+.terminal-name span {
+  font-size: 1.3em;
+}
 
 li {
-    list-style: none;
-    padding: 10px;
+  list-style: none;
+  padding: 10px;
 }
 
 .links {
-    z-index: 1;
-    margin-left: 40px;
+  z-index: 1;
+  margin-left: 40px;
 }
 
 ul {
-    display: flex;
-    padding-inline-start: 0px;
+  display: flex;
+  padding-inline-start: 0px;
 }
 
 li i {
-    font-size: 28px;
-    color: #77b163;
+  font-size: 28px;
+  color: #77b163;
 }
 
 li i:hover {
-    color: white;
+  color: white;
 }
 
 .hi {
-    margin-left: 50px;
+  margin-left: 50px;
 }
