@@ -7,6 +7,7 @@ import TypeWrite from "./TypeWriter";
 const Header = () => {
   return (
     <header className="App-header">
+      <p className="logo">Alexandru Budaca</p>
       <div className="home-terminal">
         <div className="bubbles">
           <div className="bubble1"></div>

@@ -1,6 +1,5 @@
 .App-header {
-  background: url("../../assets/je_logos.jpg") repeat scroll center center /
-    cover;
+  background: url("../../assets/je_logos.jpg") repeat scroll center center / cover;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +10,15 @@
   color: white;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.logo {
+  position: absolute;
+  top: 4%;
+  font-size: 16px;
+  left: 4em;
+  color: #3ce800;
+
 }
 
 .home-terminal {
@@ -24,7 +32,7 @@
 
 .terminal-head {
   position: absolute;
-  top: 2px;
+  top: 2%;
   color: #6a6a6a;
   font-size: 14px;
   display: flex;
@@ -38,7 +46,8 @@
 
 .terminal-head p {
   position: absolute;
-  color: grey;
+  color: wheat;
+  opacity: 50%;
   left: 40%;
 }
 
@@ -48,17 +57,13 @@
   left: 35%;
 }
 
-.type-write {
-  position: absolute;
-  z-index: 10;
-  top: 2em;
-}
+
 
 .bubbles {
   display: flex;
   position: absolute;
   z-index: 10;
-  top: 0.5em;
+  top: 4%;
   margin-left: 20px;
 }
 
@@ -85,49 +90,61 @@
   border-radius: 50%;
 }
 
-.type-write p {
+.type-write {
+  position: absolute;
+  z-index: 10;
+  top: 2em;
+  margin-left: 2em;
+}
+
+.type-write div {
   font-size: 16px;
-  margin-left: 40px;
-  padding-top: 10px;
-}
-
-.type-write .title {
-  margin-left: 40px;
-  font-size: 20px;
-  padding-top: 10px;
-}
-
-p {
+  margin-top: 10px;
   color: #3ce800;
 }
 
+
 .blue {
-  transition: opacity 0.3s;
-  -webkit-transition: opacity 0.3s;
-  opacity: 1;
+
   color: #00d1ff;
 }
 
-.purple {
-  transition: opacity 0.3s;
-  -webkit-transition: opacity 0.3s;
-  opacity: 1;
+#purple {
+  font-size: 16px;
   color: #9e00ff;
 }
 
-.red {
-  transition: opacity 0.3s;
-  -webkit-transition: opacity 0.3s;
-  opacity: 1;
+#red {
+
   color: #da0000;
+}
+
+#white {
+  color: #3ce800;
+  font-size: 18px;
 }
 
 .Typewriter__wrapper span {
   color: #00d1ff;
+
 }
-.terminal-name span {
-  font-size: 1.3em;
+
+#navbar {
+  margin-top: 4em;
+  font-size: 16px;
+  color: #3ce800;
 }
+
+#navbar a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: #3ce800
+}
+
+#navbar a:hover {
+  color: #da0000;
+}
+
 
 li {
   list-style: none;
