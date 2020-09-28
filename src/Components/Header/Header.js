@@ -5,11 +5,11 @@ import TypeWrite from "./TypeWriter";
 
 // import Links from "./Links";
 
-const Header = () => {
+const Header = ({ setNavbar }) => {
   return (
     <header className="App-header">
       <Terminal />
-      <TypeWrite />
+      <TypeWrite setNavbar={setNavbar} />
 
       {/* <Links /> */}
     </header>

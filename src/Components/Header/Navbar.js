@@ -1,23 +1,15 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
 
-const Navbar = () => {
+const Navbar = ({ setPage }) => {
   return (
     <div id="navbar">
-      <Typewriter
-        onInit={(typewriter) => {
-          typewriter
-            .start()
-            .typeString(
-              `<a href="about">Home</a> <a href="about">About</a> <a>Projects</a>  <a>Contact</a>`
-            );
-        }}
-        options={{
-          delay: 30,
-          cursorClassName: "Typewriter__cursor2",
-          wrapperClassName: "Typewriter__wrapper",
-        }}
-      />
+      <ul>
+        <li>
+          <a onClick={() => setPage(true)}>
+            About<span className="Typewriter__cursor">|</span>
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };

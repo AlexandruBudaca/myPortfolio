@@ -9,13 +9,15 @@ import Navbar from "./Components/Header/Navbar";
 import "./Components/Header/header.css";
 
 function App() {
-  // const [showAbout, setShowAbout] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+  const [page, setPage] = useState(false);
   return (
     <div className="App">
-      <Navbar />
-      <Header />
-      <About />
-      {/* <Projects /> */}
+      {navbar && <Navbar setPage={setPage} />}
+      <Header setNavbar={setNavbar} />
+      {page && <About />}
+
+      <Projects />
       {/* <Contact />
       <Footer /> */}
     </div>
