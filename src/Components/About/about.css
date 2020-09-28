@@ -1,33 +1,27 @@
 .about {
+    background: url("../../assets/JeOld.jpg") repeat scroll center center / cover;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
-    align-content: center;
-    margin-top: 50px;
-}
-
-.about-me {
-    margin-left: 120px;
-}
-
-.img-about {
+    height: 100vh;
     width: 100%;
-    opacity: 30%;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .about-content {
-    width: 600px;
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 30px;
-    line-height: 1.6;
+    position: absolute;
+    line-height: 2;
     font-size: 18px;
+    color: #3ce800;
+    top: 25%;
+    left: 1%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .about-content a {
-    color: #77b163;
+    color: #da0000;
     text-decoration: none;
     cursor: pointer;
 }

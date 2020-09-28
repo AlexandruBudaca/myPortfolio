@@ -15,7 +15,7 @@ export const typingTerminal = {
     {
       id: 1,
       state: false,
-      text: `<span id="white">Hi, I'm Alexandru Budaca!, I'm a full-stack developer!</span>`,
+      text: `<span id="name">Hi, I'm Alexandru Budaca!, I'm a full-stack developer!</span>`,
       pasteString: "",
     },
     { id: 2, state: false, text: "cd mySkills", pasteString: "" },
