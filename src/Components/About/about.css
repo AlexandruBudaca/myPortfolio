@@ -18,7 +18,16 @@
     left: 1%;
     padding-left: 20px;
     padding-right: 20px;
+    width: 850px;
 }
+
+.Typewriter__cursor2 {
+    -webkit-animation: Typewriter-cursor 1s infinite;
+    animation: Typewriter-cursor 1s infinite;
+    margin-left: 1px;
+
+}
+
 
 .about-content a {
     color: #da0000;

@@ -2,7 +2,24 @@
   color: whitesmoke;
 }
 
+#navbar {
+  position: absolute;
+  bottom: 10em;
+  left: 4em;
+  font-size: 16px;
+  color: #3ce800;
+  z-index: 1;
+}
 
+#navbar a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: #3ce800;
+}
+
+#navbar a:hover {
+  color: #da0000;
+}
 
 
 section hr {

@@ -13,7 +13,7 @@ const Terminal = () => {
       <div className="terminal-head">
         <img
           src={home_img}
-          style={{ width: "25px", height: "25px" }}
+          style={{ width: "20px", height: "20px" }}
           alt="home-logo"
         />
         <p>--alex--computer--zsh--</p>

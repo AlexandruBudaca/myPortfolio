@@ -7,7 +7,7 @@ import { typingTerminal } from "../../utils/utils";
 
 const TypeWrite = () => {
   const [typing, setTyping] = useState(typingTerminal);
-  const [navbar, setNavbar] = useState(false);
+
   const cursor = () => {
     let cursors = document.getElementsByClassName("Typewriter__cursor");
     let i;
@@ -40,13 +40,13 @@ const TypeWrite = () => {
                             : line
                         ),
                       }));
-                    })
-                    .callFunction(() => {
-                      const some = typing.type.find((line) => line.id === 11);
-                      typing.type.map((type) =>
-                        some.state ? setNavbar(true) : null
-                      );
                     });
+                  // .callFunction(() => {
+                  //   const some = typing.type.find((line) => line.id === 11);
+                  //   typing.type.map((type) =>
+                  //     some.state ? setNavbar(true) : null
+                  //   );
+                  // });
                 }}
                 options={{
                   delay: 15,
@@ -57,24 +57,6 @@ const TypeWrite = () => {
             )
           );
         })}
-        {navbar && (
-          <div id="navbar">
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .start()
-                  .typeString(
-                    `<a href="www.google.com" target="_blank">About</a> <a>Project</a>  <a>Contact</a>`
-                  );
-              }}
-              options={{
-                delay: 30,
-                cursorClassName: "Typewriter__cursor",
-                wrapperClassName: "Typewriter__wrapper",
-              }}
-            />
-          </div>
-        )}
       </div>
     </Row>
   );

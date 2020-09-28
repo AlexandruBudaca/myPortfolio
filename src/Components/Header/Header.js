@@ -2,6 +2,7 @@ import React from "react";
 
 import Terminal from "./Terminal";
 import TypeWrite from "./TypeWriter";
+
 // import Links from "./Links";
 
 const Header = () => {
@@ -9,6 +10,7 @@ const Header = () => {
     <header className="App-header">
       <Terminal />
       <TypeWrite />
+
       {/* <Links /> */}
     </header>
   );

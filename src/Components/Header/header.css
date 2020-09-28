@@ -23,16 +23,16 @@
 
 .terminal-head {
   position: absolute;
-  top: 2%;
-  color: #6a6a6a;
+  top: 3%;
   font-size: 14px;
   display: flex;
   align-items: center;
-  background-color: #6a6a6a;
+  background-color: #666666;
+
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 35px;
+  height: 20px;
 }
 
 .terminal-head p {
@@ -44,8 +44,9 @@
 
 .terminal-head img {
   position: absolute;
-  color: grey;
   left: 35%;
+  width: 10px;
+  height: 10px;
 }
 
 .bubbles {
@@ -57,24 +58,24 @@
 }
 
 .bubble1 {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: red;
   border-radius: 50%;
   margin-right: 10px;
 }
 
 .bubble2 {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: yellow;
   border-radius: 50%;
   margin-right: 10px;
 }
 
 .bubble3 {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: green;
   border-radius: 50%;
 }
@@ -116,21 +117,6 @@
   color: #00d1ff;
 }
 
-#navbar {
-  padding-top: 2em;
-  font-size: 16px;
-  color: #3ce800;
-}
-
-#navbar a {
-  padding-right: 20px;
-  text-decoration: none;
-  color: #3ce800;
-}
-
-#navbar a:hover {
-  color: #da0000;
-}
 
 li {
   list-style: none;
