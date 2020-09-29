@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 import "./header.css";
 import { typingTerminal } from "../../utils/utils";
 
-const TypeWrite = ({ setNavbar }) => {
+const TypeWrite = ({ setNavbar, page }) => {
   const [typing, setTyping] = useState(typingTerminal);
 
   const cursor = () => {
@@ -18,46 +18,48 @@ const TypeWrite = ({ setNavbar }) => {
 
   return (
     <Row>
-      <div lg={12} className="type-write">
-        {typing.type.map((test, index) => {
-          return (
-            typing.type[index].state && (
-              <Typewriter
-                key={test.id}
-                onInit={(typewriter) => {
-                  typewriter
-                    .start()
-                    .pasteString(`${test.pasteString}`)
-                    .typeString(`${test.text}`)
-                    .callFunction(() => {
-                      cursor();
-                    })
-                    .callFunction(() => {
-                      setTyping((prevState) => ({
-                        type: prevState.type.map((line) =>
-                          line.id === index + 1
-                            ? { ...line, state: true }
-                            : line
-                        ),
-                      }));
-                    })
-                    .callFunction(() => {
-                      const some = typing.type.find((line) => line.id === 11);
-                      typing.type.map((type) =>
-                        some.state ? setNavbar(true) : null
-                      );
-                    });
-                }}
-                options={{
-                  delay: 15,
-                  cursorClassName: "Typewriter__cursor",
-                  wrapperClassName: "Typewriter__wrapper",
-                }}
-              />
-            )
-          );
-        })}
-      </div>
+      {page.pages[0].state && (
+        <div lg={12} className="type-write">
+          {typing.type.map((test, index) => {
+            return (
+              typing.type[index].state && (
+                <Typewriter
+                  key={test.id}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .start()
+                      .pasteString(`${test.pasteString}`)
+                      .typeString(`${test.text}`)
+                      .callFunction(() => {
+                        cursor();
+                      })
+                      .callFunction(() => {
+                        setTyping((prevState) => ({
+                          type: prevState.type.map((line) =>
+                            line.id === index + 1
+                              ? { ...line, state: true }
+                              : line
+                          ),
+                        }));
+                      })
+                      .callFunction(() => {
+                        const some = typing.type.find((line) => line.id === 11);
+                        typing.type.map((type) =>
+                          some.state ? setNavbar(true) : null
+                        );
+                      });
+                  }}
+                  options={{
+                    delay: 15,
+                    cursorClassName: "Typewriter__cursor",
+                    wrapperClassName: "Typewriter__wrapper",
+                  }}
+                />
+              )
+            );
+          })}
+        </div>
+      )}
     </Row>
   );
 };
