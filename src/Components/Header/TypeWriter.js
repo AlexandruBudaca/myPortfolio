@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Row } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 
 import "./header.css";
-import { typingTerminal } from "../../utils/utils";
 
-const TypeWrite = ({ setNavbar, page }) => {
-  const [typing, setTyping] = useState(typingTerminal);
-
+const TypeWrite = ({ setNavbar, page, setTyping, typing }) => {
   const cursor = () => {
     let cursors = document.getElementsByClassName("Typewriter__cursor");
     let i;

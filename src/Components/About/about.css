@@ -1,14 +1,3 @@
-.about {
-    background: url("../../assets/JeOld.jpg") repeat scroll center center / cover;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .about-content {
     position: absolute;
     line-height: 2;
