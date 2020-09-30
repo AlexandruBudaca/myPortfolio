@@ -1,13 +1,11 @@
 import React from "react";
-import Terminal from "../Header/Terminal";
-import { Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
+
 import "../About/about.css";
 
 const About = () => {
   return (
     <div className="about-content">
-      <h3>About me</h3>
       <Typewriter
         onInit={(typewriter) => {
           typewriter

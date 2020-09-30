@@ -17,16 +17,16 @@ const TypeWrite = ({ setNavbar, page, setTyping, typing }) => {
     <Row>
       {page.pages[0].state && (
         <div lg={12} className="type-write">
-          {typing.type.map((test, index) => {
+          {typing.type.map((type, index) => {
             return (
               typing.type[index].state && (
                 <Typewriter
-                  key={test.id}
+                  key={type.id}
                   onInit={(typewriter) => {
                     typewriter
                       .start()
-                      .pasteString(`${test.pasteString}`)
-                      .typeString(`${test.text}`)
+                      .pasteString(`${type.pasteString}`)
+                      .typeString(`${type.text}`)
                       .callFunction(() => {
                         cursor();
                       })
@@ -40,14 +40,16 @@ const TypeWrite = ({ setNavbar, page, setTyping, typing }) => {
                         }));
                       })
                       .callFunction(() => {
-                        const some = typing.type.find((line) => line.id === 11);
+                        const typingLine = typing.type.find(
+                          (line) => line.id === 11
+                        );
                         typing.type.map((type) =>
-                          some.state ? setNavbar(true) : null
+                          typingLine.state ? setNavbar(true) : null
                         );
                       });
                   }}
                   options={{
-                    delay: 15,
+                    delay: 5,
                     cursorClassName: "Typewriter__cursor",
                     wrapperClassName: "Typewriter__wrapper",
                   }}

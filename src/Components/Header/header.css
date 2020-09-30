@@ -10,12 +10,12 @@
   color: white;
   padding-left: 10px;
   padding-right: 10px;
-
 }
 
 .home-terminal {
   position: relative;
-
+  opacity: 40%;
+  visibility: hidden;
 }
 
 .home-terminal img {
@@ -25,7 +25,7 @@
 
 .terminal-head {
   position: absolute;
-  top: 3%;
+  top: 4%;
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@
   display: flex;
   position: absolute;
   z-index: 10;
-  top: 4%;
+  top: 5%;
   margin-left: 20px;
 }
 
@@ -82,11 +82,9 @@
 .type-write {
   position: absolute;
   z-index: 10;
-  top: 5em;
-  margin-left: 2em;
+  top: 6em;
+  margin-left: 2.5em;
 }
-
-
 
 .type-write div {
   font-size: 16px;
@@ -116,15 +114,17 @@
   color: #00d1ff;
 }
 
-
 li {
   list-style: none;
   padding: 10px;
 }
 
 .links {
+  position: absolute;
+  bottom: 1rem;
   z-index: 1;
-  margin-left: 40px;
+
+  left: 3.5rem;
 }
 
 ul {
@@ -134,11 +134,11 @@ ul {
 
 li i {
   font-size: 28px;
-  color: #77b163;
+  color: #3ce800;
 }
 
 li i:hover {
-  color: white;
+  color: #da0000;
 }
 
 .hi {

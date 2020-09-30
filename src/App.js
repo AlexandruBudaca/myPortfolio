@@ -4,14 +4,16 @@ import Header from "../src/Components/Header/Header";
 import About from "../src/Components/About/About";
 import Projects from "../src/Components/Projects/Projects";
 import { typingTerminal } from "./utils/utils";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
+import Links from "../src/Components/Header/Links";
+// import Contact from "./Components/Contact/Contact";
+
 import Navbar from "./Components/Header/Navbar";
 import "./Components/Header/header.css";
 
 function App() {
   const [navbar, setNavbar] = useState(false);
   const [typing, setTyping] = useState(typingTerminal);
+
   const [page, setPage] = useState({
     pages: [
       { id: 0, state: true, text: "Home" },
@@ -30,8 +32,9 @@ function App() {
       />
       {page.pages[1].state && <About />}
       {page.pages[2].state && <Projects />}
-      {/* <Contact />
-      <Footer /> */}
+
+      {/* <Contact /> */}
+      <Links />
     </div>
   );
 }
