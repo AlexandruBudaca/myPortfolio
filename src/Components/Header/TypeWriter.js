@@ -3,16 +3,8 @@ import { Row } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 
 import "./header.css";
-
+import { cursor } from "../../utils/utils";
 const TypeWrite = ({ setNavbar, page, setTyping, typing }) => {
-  const cursor = () => {
-    let cursors = document.getElementsByClassName("Typewriter__cursor");
-    let i;
-    for (i = 0; i < cursors.length; i++) {
-      cursors[i].style.color = "transparent";
-    }
-  };
-
   return (
     <Row>
       {page.pages[0].state && (
@@ -28,7 +20,7 @@ const TypeWrite = ({ setNavbar, page, setTyping, typing }) => {
                       .pasteString(`${type.pasteString}`)
                       .typeString(`${type.text}`)
                       .callFunction(() => {
-                        cursor();
+                        cursor("Typewriter__cursor");
                       })
                       .callFunction(() => {
                         setTyping((prevState) => ({
@@ -38,15 +30,15 @@ const TypeWrite = ({ setNavbar, page, setTyping, typing }) => {
                               : line
                           ),
                         }));
-                      })
-                      .callFunction(() => {
-                        const typingLine = typing.type.find(
-                          (line) => line.id === 11
-                        );
-                        typing.type.map((type) =>
-                          typingLine.state ? setNavbar(true) : null
-                        );
                       });
+                    // .callFunction(() => {
+                    //   const typingLine = typing.type.find(
+                    //     (line) => line.id === 11
+                    //   );
+                    //   typing.type.map((type) =>
+                    //     typingLine.state ? setNavbar(true) : null
+                    //   );
+                    // });
                   }}
                   options={{
                     delay: 5,

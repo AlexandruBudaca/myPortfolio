@@ -82,7 +82,7 @@
 .type-write {
   position: absolute;
   z-index: 10;
-  top: 6em;
+  top: 4em;
   margin-left: 2.5em;
 }
 
@@ -107,7 +107,10 @@
 
 #name {
   color: #3ce800;
-  font-size: 20px;
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
 }
 
 .Typewriter__wrapper span {
@@ -121,15 +124,15 @@ li {
 
 .links {
   position: absolute;
-  bottom: 1rem;
+  bottom: 4rem;
   z-index: 1;
-
-  left: 3.5rem;
+  left: 4rem;
 }
 
 ul {
   display: flex;
   padding-inline-start: 0px;
+  align-items: center;
 }
 
 li i {
@@ -143,4 +146,10 @@ li i:hover {
 
 .hi {
   margin-left: 50px;
+}
+
+.links p {
+  font-size: 0.7rem;
+  color: #3ce800;
+  margin-left: 10px;
 }

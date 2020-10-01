@@ -32,6 +32,7 @@ const Links = () => {
           </a>
         </li>
       </ul>
+      <p> © Alexandru Budaca</p>
     </div>
   );
 };

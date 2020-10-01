@@ -1,6 +1,6 @@
 .projects-main {
   position: absolute;
-  top: 15em;
+  top: 10em;
   width: 100%;
   left: 4.5rem;
   line-height: 2;
@@ -65,6 +65,17 @@
 #overTheLine,
 #seeTheFuture,
 #chatApp {
+  color: #3ce800;
+}
+
+#overTheLine:hover,
+#seeTheFuture:hover,
+#chatApp:hover {
+  color: #da0000;
+  cursor: pointer;
+}
+
+.Typewriter__wrapper {
   color: #3ce800;
 }
 

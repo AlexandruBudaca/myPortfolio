@@ -1,31 +1,56 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
+
+import { cursor } from "../../utils/utils";
 
 import "./contact.css";
 
 const Contact = () => {
   return (
     <div className="contact-section">
-      <h2>
-        Contact <span>></span>
-      </h2>
-      <hr />
-      <div className="contact">
-        <form className="input-form" id="usrform">
-          <input placeholder="First name" type="text" required />
-          <input placeholder="Surname" type="text" required />
-          <input
-            placeholder="E-mail"
-            type="email"
-            pattern=".+@globex.com"
-            size="30"
-            required
-          />
-          <textarea rows="4" cols="50" name="comment" form="usrform">
-            Enter your message here...
-          </textarea>
-          <button>Submit</button>
-        </form>
-      </div>
+      <Typewriter
+        onInit={(typewriter) => {
+          typewriter
+            .start()
+            .typeString(`Catford, London`)
+            .callFunction(() => {
+              cursor("Typewriter__cursor_contact");
+            });
+        }}
+        options={{
+          delay: 10,
+          cursorClassName: "Typewriter__cursor_contact",
+          wrapperClassName: "Typewriter__wrapper",
+        }}
+      />
+      <Typewriter
+        onInit={(typewriter) => {
+          typewriter
+            .start()
+            .typeString(`<span>~</span> 07878318952`)
+            .callFunction(() => {
+              cursor("Typewriter__cursor_contact");
+            });
+        }}
+        options={{
+          delay: 10,
+          cursorClassName: "Typewriter__cursor_contact",
+          wrapperClassName: "Typewriter__wrapper",
+        }}
+      />
+      <Typewriter
+        onInit={(typewriter) => {
+          typewriter.start()
+            .typeString(` <a id="email" href="mailto:alexandru.budaca.i@gmail.com" target="_blank">
+        <span>~</span> alexandru.budaca.i@gmail.com
+      </a>`);
+        }}
+        options={{
+          delay: 10,
+          cursorClassName: "Typewriter__cursor_email",
+          wrapperClassName: "Typewriter__wrapper",
+        }}
+      />
     </div>
   );
 };

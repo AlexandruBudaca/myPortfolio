@@ -1,65 +1,34 @@
 .contact-section {
-    height: 100%;
+    position: absolute;
+    top: 15em;
+    left: 5em;
 }
 
-.contact-section hr {
-    margin: auto;
-    border: 1px solid #77b163;
-    margin-left: 100px;
-    margin-right: 100px;
+.contact-section .Typewriter__wrapper {
+    display: inline-block;
+    padding-top: 3rem;
 }
 
-.contact-section h2 {
-    margin-left: 120px;
-    margin-top: 100px;
+.Typewriter__cursor_contact {
+    -webkit-animation: Typewriter-cursor 1s infinite;
+    animation: Typewriter-cursor 1s infinite;
+    margin-left: 1px;
+    color: #3ce800;
 }
 
-.contact {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 30px;
+.Typewriter__cursor_email {
+    -webkit-animation: Typewriter-cursor 1s infinite;
+    animation: Typewriter-cursor 1s infinite;
+    margin-left: 1px;
+    color: #3ce800;
 }
 
-.input-form {
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-    background-color: #111;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    height: 450px;
-    box-shadow: 3px 3px 6px #1e351c;
+#email {
+    text-decoration-line: none;
+    color: #3ce800;
 }
 
-.input-form input {
-    width: 600px;
-    padding: 20px;
-    margin-top: 20px;
-    outline: none;
-}
-
-.input-form textarea {
-    width: 600px;
-    padding: 20px;
-    margin-top: 20px;
-    outline: none;
-}
-
-.input-form button {
-    width: 100px;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #77b163;
-    color: whitesmoke;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.input-form button:hover {
-    background-color: whitesmoke;
-    color: #77b163;
-    transform: scale(1.1);
+#email:hover {
+    text-decoration-line: none;
+    color: #da0000;
 }
