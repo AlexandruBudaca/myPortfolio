@@ -82,8 +82,8 @@
 .type-write {
   position: absolute;
   z-index: 10;
-  top: 4em;
-  margin-left: 2.5em;
+  top: 2em;
+  margin-left: 3em;
 }
 
 .type-write div {
@@ -124,7 +124,7 @@ li {
 
 .links {
   position: absolute;
-  bottom: 4rem;
+  bottom: 1rem;
   z-index: 1;
   left: 4rem;
 }
