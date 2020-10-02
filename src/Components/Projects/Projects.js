@@ -75,15 +75,48 @@ const Projects = () => {
         >
           <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter">
+              <div className="bubbles">
+                <div className="bubble1"></div>
+                <div className="bubble2"></div>
+                <div className="bubble3"></div>
+              </div>
               {modalShow.name}
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <img src={modalShow.imgSrc} alt="project" />
-            <p>{modalShow.description}</p>
-            <p>Test</p>
+            <p className="description">{modalShow.description}</p>
+            <p className="responsibilities">Responsibilities: </p>
+            <ul>
+              {modalShow.responsibilities.map((responsibility) => (
+                <li>{responsibility}</li>
+              ))}
+            </ul>
+            <p className="responsibilities">Achievements: </p>
+            <ul>
+              {modalShow.achievements.map((achievements) => (
+                <li>{achievements}</li>
+              ))}
+            </ul>
           </Modal.Body>
           <Modal.Footer>
+            <div className="project-links">
+              <a
+                href={modalShow.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+
+              <a
+                href={modalShow.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live
+              </a>
+            </div>
             <Button onClick={() => setModalShow(null)}>Close</Button>
           </Modal.Footer>
         </Modal>

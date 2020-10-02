@@ -1,7 +1,6 @@
 .projects-main {
   position: absolute;
   top: 10em;
-  width: 100%;
   left: 4.5rem;
   line-height: 2;
   font-size: 18px;
@@ -10,42 +9,118 @@
 .modal-body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: black;
-  color: #3ce800;
-  border: 1px solid #3ce800;
+  border: 1px solid #666666;
+}
+
+.modal-body button {
+  width: 100px;
 }
 
 .modal-body img {
-  width: 500px;
-  height: 300px;
+  width: 100%;
+
+}
+
+.modal-body ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.modal-body ul li {
+  padding: 2px;
+  color: #888888;
+}
+
+.responsibilities {
+  color: #3ce800;
+}
+
+.description {
+  color: #888888;
+  padding-top: 10px;
 }
 
 .modal-footer {
+  justify-content: space-between !important;
   background-color: black;
   color: #3ce800;
-  border: 1px solid #3ce800;
-  border-top: 1px solid #3ce800 !important;
+  border: 1px solid #666666;
+  border-top: 1px solid #666666 !important;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #3ce800;
+  padding-right: 10px;
+}
+
+.project-links a i {
+  font-size: 24px;
+}
+
+.project-links a:hover {
+  text-decoration: none;
+  color: #da0000;
 }
 
 .modal-header {
   background-color: black;
   color: #3ce800;
-  border: 1px solid #3ce800;
-  border-bottom: 1px solid #3ce800 !important;
+  border: 1px solid #666666;
+  border-bottom: 1px solid #666666 !important;
+}
+
+#contained-modal-title-vcenter {
+  display: flex;
+  align-items: center;
+}
+
+.bubbles {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.bubble1 {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.bubble2 {
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.bubble3 {
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-radius: 50%;
+
 }
 
 .modal-header .close {
   color: #3ce800;
   text-shadow: none;
-
 }
 
 .modal-header .close:hover {
   color: #da0000;
   text-shadow: none;
-
 }
 
 .modal-footer button {
@@ -58,19 +133,35 @@
   background-color: #da0000;
   color: #3ce800;
   border: 1px solid #3ce800;
-
 }
 
+#ls {
+  font-size: 15px;
+}
+
+#project-ls {
+  color: #3ce800;
+  font-size: 15px;
+  padding-bottom: 30px;
+  display: inline-block;
+}
 
 #overTheLine,
 #seeTheFuture,
-#chatApp {
+#chatApp,
+#countries,
+#jobs,
+#movies {
   color: #3ce800;
+  font-size: 22px;
 }
 
 #overTheLine:hover,
 #seeTheFuture:hover,
-#chatApp:hover {
+#chatApp:hover,
+#countries:hover,
+#jobs:hover,
+#movies:hover {
   color: #da0000;
   cursor: pointer;
 }
