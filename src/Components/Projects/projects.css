@@ -173,3 +173,116 @@
 .Typewriter__cursor3 {
   color: #3ce800;
 }
+
+
+
+@media only screen and (min-device-width: 320px) {
+  .projects-main {
+    position: absolute;
+    top: 3em;
+    left: 2rem;
+    line-height: 2;
+    font-size: 14px;
+  }
+
+  #overTheLine,
+  #seeTheFuture,
+  #chatApp,
+  #countries,
+  #jobs,
+  #movies {
+    color: #3ce800;
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (min-device-width: 375px) {
+  .projects-main {
+    position: absolute;
+    top: 5em;
+    left: 2rem;
+    line-height: 2;
+    font-size: 14px;
+  }
+
+  #overTheLine,
+  #seeTheFuture,
+  #chatApp,
+  #countries,
+  #jobs,
+  #movies {
+    color: #3ce800;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .projects-main {
+    position: absolute;
+    top: 5em;
+    left: 3rem;
+    line-height: 2;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .projects-main {
+    position: absolute;
+    top: 5em;
+    left: 3rem;
+    line-height: 2;
+    font-size: 18px;
+  }
+
+  #overTheLine,
+  #seeTheFuture,
+  #chatApp,
+  #countries,
+  #jobs,
+  #movies {
+    color: #3ce800;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 1440px) {
+  .projects-main {
+    position: absolute;
+    top: 5em;
+    left: 3rem;
+    line-height: 2;
+    font-size: 18px;
+  }
+
+  #overTheLine,
+  #seeTheFuture,
+  #chatApp,
+  #countries,
+  #jobs,
+  #movies {
+    color: #3ce800;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 1920px) {
+  .projects-main {
+    position: absolute;
+    top: 5em;
+    left: 6rem;
+    line-height: 2;
+    font-size: 20px;
+  }
+
+  #overTheLine,
+  #seeTheFuture,
+  #chatApp,
+  #countries,
+  #jobs,
+  #movies {
+    color: #3ce800;
+    font-size: 24px;
+  }
+}
