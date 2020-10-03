@@ -23,3 +23,47 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+@media only screen and (min-device-width: 320px) {
+    .about-content {
+
+        font-size: 12px;
+        color: #3ce800;
+        top: 5rem;
+    }
+
+}
+
+@media only screen and (min-device-width: 375px) {
+    .about-content {
+        font-size: 14px;
+        color: #3ce800;
+        top: 5rem;
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+    .about-content {
+
+        font-size: 16px;
+        color: #3ce800;
+        top: 8rem;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) {
+    .about-content {
+        font-size: 20px;
+        color: #3ce800;
+        top: 10rem;
+    }
+}
+
+@media only screen and (min-device-width: 1440px) {
+    .about-content {
+        font-size: 20px;
+        color: #3ce800;
+        top: 5rem;
+        left: 1em;
+    }
+}

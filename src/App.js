@@ -8,7 +8,7 @@ import Links from "./Components/Links";
 import Contact from "./Components/Contact/Contact";
 
 import Navbar from "./Components/Navbar";
-import "./Components/Home/header.css";
+import "./Components/Home/Home.css";
 
 function App() {
   // const [navbar, setNavbar] = useState(false);

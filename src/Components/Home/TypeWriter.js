@@ -2,7 +2,7 @@ import React from "react";
 import { Row } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 
-import "./header.css";
+import "./Home.css";
 import { cursor } from "../../utils/utils";
 const TypeWrite = ({ setNavbar, page, setTyping, typing }) => {
   return (

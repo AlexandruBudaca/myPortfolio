@@ -19,7 +19,7 @@
   position: absolute;
   bottom: 7em;
   left: 4em;
-  font-size: 16px;
+  font-size: 18px;
   color: #3ce800;
   z-index: 1;
 }
@@ -76,4 +76,127 @@ li i:hover {
   font-size: 0.7rem;
   color: #3ce800;
   margin-left: 10px;
+}
+
+@media(min-width: 375px) {
+  #navbar {
+    bottom: 5.5em;
+    left: 1em;
+  }
+
+  .links {
+    position: absolute;
+    bottom: 0.2rem;
+    z-index: 1;
+    left: 1rem;
+  }
+
+  li i {
+    font-size: 22px;
+    color: #3ce800;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  #navbar {
+    position: absolute;
+    bottom: 6em;
+    left: 1em;
+    font-size: 14px;
+    color: #3ce800;
+    z-index: 1;
+  }
+
+  .links {
+    position: absolute;
+    bottom: 0.2rem;
+    z-index: 1;
+    left: 1rem;
+  }
+
+  li i {
+    font-size: 18px;
+    color: #3ce800;
+  }
+
+}
+
+@media(min-width: 768px) {
+  #navbar {
+    bottom: 7em;
+    left: 2em;
+    font-size: 20px;
+  }
+
+  .links {
+    position: absolute;
+    bottom: 0.2rem;
+    z-index: 1;
+    left: 2rem;
+  }
+
+  li i {
+    font-size: 28px;
+    color: #3ce800;
+  }
+}
+
+@media(min-width: 1024px) {
+  #navbar {
+    bottom: 7em;
+    left: 2em;
+    font-size: 23px;
+  }
+
+  .links {
+    position: absolute;
+    bottom: 0.2rem;
+    z-index: 1;
+    left: 2rem;
+  }
+
+  li i {
+    font-size: 32px;
+    color: #3ce800;
+  }
+}
+
+@media(min-width: 1366px) {
+  #navbar {
+    bottom: 5em;
+    left: 1.5em;
+    font-size: 23px;
+  }
+
+  .links {
+    position: absolute;
+    bottom: 0.2rem;
+    z-index: 1;
+    left: 2rem;
+  }
+
+  li i {
+    font-size: 32px;
+    color: #3ce800;
+  }
+}
+
+@media(min-width: 1440px) {
+  #navbar {
+    bottom: 5em;
+    left: 1.1em;
+    font-size: 20px;
+  }
+
+  .links {
+    position: absolute;
+    bottom: 0.2rem;
+    z-index: 1;
+    left: 2rem;
+  }
+
+  li i {
+    font-size: 32px;
+    color: #3ce800;
+  }
 }
