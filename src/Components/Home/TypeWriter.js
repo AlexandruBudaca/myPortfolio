@@ -31,14 +31,6 @@ const TypeWrite = ({ setNavbar, page, setTyping, typing }) => {
                           ),
                         }));
                       });
-                    // .callFunction(() => {
-                    //   const typingLine = typing.type.find(
-                    //     (line) => line.id === 11
-                    //   );
-                    //   typing.type.map((type) =>
-                    //     typingLine.state ? setNavbar(true) : null
-                    //   );
-                    // });
                   }}
                   options={{
                     delay: 5,

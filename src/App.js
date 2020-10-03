@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./App.css";
-import Header from "../src/Components/Header/Header";
+import TypeWriter from "./Components/Home/TypeWriter";
 import About from "../src/Components/About/About";
 import Projects from "../src/Components/Projects/Projects";
 import { typingTerminal } from "./utils/utils";
-import Links from "../src/Components/Header/Links";
+import Links from "./Components/Links";
 import Contact from "./Components/Contact/Contact";
 
-import Navbar from "./Components/Header/Navbar";
-import "./Components/Header/header.css";
+import Navbar from "./Components/Navbar";
+import "./Components/Home/header.css";
 
 function App() {
   // const [navbar, setNavbar] = useState(false);
@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       {/* {navbar && <Navbar setPage={setPage} page={page} setTyping={setTyping} />} */}
       <Navbar setPage={setPage} page={page} setTyping={setTyping} />
-      <Header
+      <TypeWriter
         // setNavbar={setNavbar}
         page={page}
         setTyping={setTyping}

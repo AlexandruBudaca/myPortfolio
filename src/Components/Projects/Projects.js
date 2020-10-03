@@ -4,7 +4,8 @@ import Button from "react-bootstrap/Button";
 import Typewriter from "typewriter-effect";
 
 import "../Projects/projects.css";
-import { cursor, MyProjects } from "../../utils/utils";
+import { MyProjects } from "../../utils/MyprojectsData";
+import { cursor } from "../../utils/utils";
 
 const Projects = () => {
   const [modalShow, setModalShow] = useState(null);

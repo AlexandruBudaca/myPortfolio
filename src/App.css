@@ -1,7 +1,20 @@
 .App {
-  color: whitesmoke;
+  background: url("./assets/je_logos.jpg") repeat scroll center center / cover;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
+.modal-alex {
+  position: absolute !important;
+}
+
+/*NAVBAR */
 #navbar {
   position: absolute;
   bottom: 7em;
@@ -11,9 +24,7 @@
   z-index: 1;
 }
 
-.modal-alex {
-  position: absolute !important;
-}
+
 
 #navbar li {
   padding-right: 20px;
@@ -26,13 +37,43 @@
   color: #da0000;
 }
 
-section hr {
-  margin: auto;
-  border: 1px solid #77b163;
-  margin-left: 100px;
-  margin-right: 100px;
+
+
+/*LINKS */
+
+li {
+  list-style: none;
+  padding: 10px;
 }
 
-section h1 {
-  margin-bottom: 20px;
+.links {
+  position: absolute;
+  bottom: 1rem;
+  z-index: 1;
+  left: 4rem;
+}
+
+ul {
+  display: flex;
+  padding-inline-start: 0px;
+  align-items: center;
+}
+
+li i {
+  font-size: 28px;
+  color: #3ce800;
+}
+
+li i:hover {
+  color: #da0000;
+}
+
+.hi {
+  margin-left: 50px;
+}
+
+.links p {
+  font-size: 0.7rem;
+  color: #3ce800;
+  margin-left: 10px;
 }
