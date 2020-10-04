@@ -21,6 +21,16 @@
     cursor: pointer;
 }
 
+
+@media only screen and (max-device-width: 375px) {
+    .about-content {
+
+        margin-top: 2em;
+
+    }
+
+}
+
 /* 
 @media only screen and (min-device-width: 320px) {
     .about-content {
