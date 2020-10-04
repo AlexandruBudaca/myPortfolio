@@ -27,7 +27,9 @@ const Contact = () => {
         onInit={(typewriter) => {
           typewriter
             .start()
-            .typeString(`<span>~</span> +44 7878318952`)
+            .typeString(
+              `<a id="email" href="tel:+44 7878318952" target="_blank"> <span>~</span> +44 7878318952  </a>`
+            )
             .callFunction(() => {
               cursor("Typewriter__cursor_contact");
             });

@@ -1,14 +1,13 @@
 import React from "react";
-import { Row } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 
 import "./Home.css";
 import { cursor } from "../../utils/utils";
 const TypeWrite = ({ setNavbar, page, setTyping, typing }) => {
   return (
-    <Row>
+    <>
       {page.pages[0].state && (
-        <div lg={12} className="type-write">
+        <div className="type-write">
           {typing.type.map((type, index) => {
             return (
               typing.type[index].state && (
@@ -43,7 +42,7 @@ const TypeWrite = ({ setNavbar, page, setTyping, typing }) => {
           })}
         </div>
       )}
-    </Row>
+    </>
   );
 };
 export default TypeWrite;

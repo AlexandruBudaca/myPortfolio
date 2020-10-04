@@ -1,7 +1,5 @@
 .contact-section {
-    position: absolute;
-    top: 15em;
-    left: 5em;
+    margin-left: 2rem;
 }
 
 .contact-section .Typewriter__wrapper {
@@ -33,15 +31,16 @@
     color: #da0000;
 }
 
-@media only screen and (min-device-width: 320px) {
+/* @media only screen and (min-device-width: 320px) {
     .contact-section {
         position: absolute;
         top: 4em;
         left: 1em;
     }
 
-}
+} */
 
+/* 
 @media only screen and (min-device-width: 375px) {
     .contact-section {
         position: absolute;
@@ -68,4 +67,4 @@
         left: 3em;
         font-size: 20px;
     }
-}
+} */

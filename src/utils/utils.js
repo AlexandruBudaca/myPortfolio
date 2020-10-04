@@ -84,3 +84,11 @@ export const typingTerminal = {
     },
   ],
 };
+export const setPages = {
+  pages: [
+    { id: 0, state: true, text: "Home" },
+    { id: 1, state: false, text: "About" },
+    { id: 2, state: false, text: "Projects" },
+    { id: 3, state: false, text: "Contact" },
+  ],
+};

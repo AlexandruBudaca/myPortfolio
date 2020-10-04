@@ -1,7 +1,6 @@
 .projects-main {
-  position: absolute;
-  top: 10em;
-  left: 4.5rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
   line-height: 2;
   font-size: 18px;
 }
@@ -87,6 +86,8 @@
   display: flex;
   align-items: center;
   margin-right: 10px;
+
+
 }
 
 .bubble1 {
@@ -175,7 +176,7 @@
 }
 
 
-
+/* 
 @media only screen and (min-device-width: 320px) {
   .projects-main {
     position: absolute;
@@ -231,7 +232,7 @@
   .projects-main {
     position: absolute;
     top: 5em;
-    left: 3rem;
+    left: 4rem;
     line-height: 2;
     font-size: 18px;
   }
@@ -250,7 +251,7 @@
 @media only screen and (min-device-width: 1440px) {
   .projects-main {
     position: absolute;
-    top: 5em;
+    top: 4em;
     left: 3rem;
     line-height: 2;
     font-size: 18px;
@@ -285,4 +286,4 @@
     color: #3ce800;
     font-size: 24px;
   }
-}
+} */
