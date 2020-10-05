@@ -65,6 +65,15 @@ li i:hover {
   margin-left: 10px;
 }
 
+.CV {
+  font-size: 20px;
+  color: #3ce800;
+}
+
+.CV:hover {
+  color: #da0000;
+}
+
 @media only screen and (min-device-width: 320px) {
   #navbar {
     font-size: 15px;
@@ -114,8 +123,7 @@ li i:hover {
   font-size: 3rem;
 }
 
-@media only screen and (min-device-width: 375px) {
-}
+@media only screen and (min-device-width: 375px) {}
 
 @media only screen and (min-device-width: 768px) {
   #navbar {
