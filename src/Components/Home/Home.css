@@ -36,17 +36,16 @@
 
 
 
-@media only screen and (max-device-width: 320px) {
+@media only screen and (min-device-width: 320px) {
   #name {
 
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-top: 1px;
     padding-bottom: 1px;
   }
 
   .type-write div {
     font-size: 0.6rem;
-    /* margin-top: 10px; */
   }
 
   .type-write {
@@ -54,7 +53,7 @@
   }
 }
 
-@media only screen and (max-device-width: 375px) {
+@media only screen and (min-device-width: 375px) {
   #name {
 
     font-size: 1.2rem;
