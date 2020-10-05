@@ -176,14 +176,9 @@
 }
 
 
-/* 
 @media only screen and (min-device-width: 320px) {
   .projects-main {
-    position: absolute;
-    top: 3em;
-    left: 2rem;
-    line-height: 2;
-    font-size: 14px;
+    margin-left: 1rem;
   }
 
   #overTheLine,
@@ -200,11 +195,7 @@
 
 @media only screen and (min-device-width: 375px) {
   .projects-main {
-    position: absolute;
-    top: 5em;
-    left: 2rem;
-    line-height: 2;
-    font-size: 14px;
+    margin-left: 1rem;
   }
 
   #overTheLine,
@@ -220,21 +211,23 @@
 
 @media only screen and (min-device-width: 768px) {
   .projects-main {
-    position: absolute;
-    top: 5em;
-    left: 3rem;
-    line-height: 2;
-    font-size: 18px;
+    margin-left: 2rem;
+  }
+
+  #overTheLine,
+  #seeTheFuture,
+  #chatApp,
+  #countries,
+  #jobs,
+  #movies {
+    color: #3ce800;
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-device-width: 1024px) {
   .projects-main {
-    position: absolute;
-    top: 5em;
-    left: 4rem;
-    line-height: 2;
-    font-size: 18px;
+    margin-left: 2rem;
   }
 
   #overTheLine,
@@ -245,16 +238,28 @@
   #movies {
     color: #3ce800;
     font-size: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (min-device-height: 1366px) {
+  .projects-main {
+    margin-left: 2rem;
+  }
+
+  #overTheLine,
+  #seeTheFuture,
+  #chatApp,
+  #countries,
+  #jobs,
+  #movies {
+    color: #3ce800;
+    font-size: 28px;
   }
 }
 
 @media only screen and (min-device-width: 1440px) {
   .projects-main {
-    position: absolute;
-    top: 4em;
-    left: 3rem;
-    line-height: 2;
-    font-size: 18px;
+    margin-left: 1rem;
   }
 
   #overTheLine,
@@ -264,17 +269,13 @@
   #jobs,
   #movies {
     color: #3ce800;
-    font-size: 22px;
+    font-size: 20 px;
   }
 }
 
 @media only screen and (min-device-width: 1920px) {
   .projects-main {
-    position: absolute;
-    top: 5em;
-    left: 6rem;
-    line-height: 2;
-    font-size: 20px;
+    margin-left: 2rem;
   }
 
   #overTheLine,
@@ -284,6 +285,6 @@
   #jobs,
   #movies {
     color: #3ce800;
-    font-size: 24px;
+    font-size: 20px;
   }
-} */
+}

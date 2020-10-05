@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 import "./Home.css";
 import { cursor } from "../../utils/utils";
-const TypeWrite = ({ setNavbar, page, setTyping, typing }) => {
+const TypeWrite = ({ page, setTyping, typing }) => {
   return (
     <>
       {page.pages[0].state && (

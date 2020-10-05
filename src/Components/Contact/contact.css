@@ -31,40 +31,46 @@
     color: #da0000;
 }
 
-/* @media only screen and (min-device-width: 320px) {
+@media only screen and (min-device-width: 320px) {
     .contact-section {
-        position: absolute;
-        top: 4em;
-        left: 1em;
+        margin-left: 2rem;
+        font-size: 14px;
     }
 
-} */
 
-/* 
+}
+
+
 @media only screen and (min-device-width: 375px) {
     .contact-section {
-        position: absolute;
-        top: 4em;
-        left: 1em;
+        margin-left: 2rem;
+        font-size: 14px;
     }
+
 
 }
 
 @media only screen and (min-device-width: 768px) {
     .contact-section {
-        position: absolute;
-        top: 5em;
-        left: 3em;
+        margin-left: 2rem;
         font-size: 18px;
     }
+
 
 }
 
 @media only screen and (min-device-width: 1024px) {
     .contact-section {
-        position: absolute;
-        top: 5em;
-        left: 3em;
-        font-size: 20px;
+        margin-left: 2rem;
+        font-size: 18px;
     }
-} */
+
+}
+
+@media only screen and (min-device-width: 1024px) and (min-device-height: 1366px) {
+    .contact-section {
+        margin-left: 2rem;
+        font-size: 26px;
+    }
+
+}
