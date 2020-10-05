@@ -53,6 +53,7 @@ li i {
 
 li i:hover {
   color: #da0000;
+  transform: scale(1.2);
 }
 
 .hi {
@@ -66,12 +67,18 @@ li i:hover {
 }
 
 .CV {
-  font-size: 20px;
+  font-size: 26px;
   color: #3ce800;
+  text-decoration-line: none;
+  transform: scale(1.2);
+  cursor: pointer;
+
 }
 
 .CV:hover {
+  text-decoration-line: none;
   color: #da0000;
+  font-size: 28px;
 }
 
 @media only screen and (min-device-width: 320px) {
