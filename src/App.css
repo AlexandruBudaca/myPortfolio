@@ -2,7 +2,6 @@
   background: url("./assets/je_logos.jpg") repeat scroll center center / cover;
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   padding-left: 10px;
   padding-right: 10px;
@@ -81,16 +80,10 @@ li i:hover {
   font-size: 28px;
 }
 
-@media only screen and (min-device-width: 320px) {
-  #navbar {
-    font-size: 15px;
-  }
 
-  li i {
-    font-size: 24px;
-    color: #3ce800;
-  }
-}
+
+
+
 
 .intro {
   background-color: black;
@@ -130,7 +123,47 @@ li i:hover {
   font-size: 3rem;
 }
 
-@media only screen and (min-device-width: 375px) {}
+
+
+@media only screen and (min-device-width: 320px) {
+  #navbar {
+    font-size: 15px;
+  }
+
+  li i {
+    font-size: 24px;
+    color: #3ce800;
+  }
+}
+
+@media only screen and (min-device-width: 375px) {
+  #navbar {
+    font-size: 18px;
+    bottom: 5rem;
+  }
+
+  li i {
+    font-size: 24px;
+    color: #3ce800;
+  }
+
+  .links {
+    position: fixed;
+    bottom: 0rem;
+    margin-left: 1rem;
+  }
+
+  li i {
+    font-size: 22px;
+    color: #3ce800;
+  }
+
+  .CV {
+    font-size: 22px;
+
+
+  }
+}
 
 @media only screen and (min-device-width: 768px) {
   #navbar {

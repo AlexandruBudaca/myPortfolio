@@ -35,11 +35,23 @@
 }
 
 
-
-@media only screen and (min-device-width: 320px) {
+@media only screen and (max-device-height: 375px) {
   #name {
+    visibility: visible;
+  }
 
-    font-size: 0.8rem;
+  .type-write div {
+    font-size: 0.6rem;
+  }
+
+  .type-write {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-device-height: 768px) {
+  #name {
+    font-size: 0.6rem;
     padding-top: 1px;
     padding-bottom: 1px;
   }
@@ -53,6 +65,32 @@
   }
 }
 
+@media only screen and (max-device-height: 320px) {
+  #name {
+    visibility: visible;
+  }
+
+  .type-write {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-device-width: 320px) {
+  #name {
+
+    font-size: 0.8rem;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .type-write {
+    margin-left: 1.5em;
+  }
+}
+
+
+
+
 @media only screen and (min-device-width: 375px) {
   #name {
 
@@ -63,13 +101,13 @@
 
   .type-write div {
     font-size: 0.8rem;
-    /* margin-top: 10px; */
   }
 
   .type-write {
     margin-left: 1.5em;
   }
 }
+
 
 
 
@@ -94,7 +132,7 @@
 @media only screen and (min-device-width: 1024px) and (min-device-height: 1366px) {
   #name {
 
-    font-size: 28px;
+    font-size: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -113,27 +151,6 @@
   }
 }
 
-@media only screen and (min-device-width: 1024px) {
-  #name {
-
-    font-size: 28px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-  }
-
-  .type-write {
-    position: absolute;
-    z-index: 10;
-    top: 1em;
-    margin-left: 2em;
-  }
-
-  .type-write div {
-    font-size: 24px;
-
-  }
-}
 
 @media only screen and (min-device-width: 1440px) {
   #name {

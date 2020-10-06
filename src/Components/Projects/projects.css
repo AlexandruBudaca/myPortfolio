@@ -175,6 +175,15 @@
   color: #3ce800;
 }
 
+@media only screen and (max-device-height: 375px) {
+  .projects-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+}
 
 @media only screen and (min-device-width: 320px) {
   .projects-main {
