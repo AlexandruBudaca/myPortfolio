@@ -4,6 +4,7 @@ import overTheLine from "../assets/overtheline.jpg";
 import countries from "../assets/countries.jpg";
 import jobs from "../assets/jobs.jpg";
 import movies from "../assets/movies.jpg";
+import hotel from "../assets/hotelApp.png";
 
 export const MyProjects = {
   projects: [
@@ -140,7 +141,7 @@ export const MyProjects = {
       idText: "hotel",
       text: `<span id="hotel">Hotel App</span>`,
       state: false,
-      imgSrc: movies,
+      imgSrc: hotel,
       name: "Hotel App",
       description: "Full stack, working with api.",
       responsibilities: ["•	Working with api", "•	CSS"],

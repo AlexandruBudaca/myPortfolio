@@ -152,7 +152,8 @@
 #chatApp,
 #countries,
 #jobs,
-#movies {
+#movies ,
+#hotel{
   color: #3ce800;
   font-size: 22px;
 }
@@ -162,7 +163,8 @@
 #chatApp:hover,
 #countries:hover,
 #jobs:hover,
-#movies:hover {
+#movies:hover,
+#hotel:hover {
   color: #da0000;
   cursor: pointer;
 }
