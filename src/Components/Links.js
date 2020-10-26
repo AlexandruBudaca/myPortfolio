@@ -1,6 +1,6 @@
 import React from "react";
 
-import cv from "../assets/CV_Alexandru_B.pdf";
+import cv from "../assets/CV_Alex_B.pdf";
 
 const Links = () => {
   return (

@@ -195,7 +195,8 @@
   #chatApp,
   #countries,
   #jobs,
-  #movies {
+  #movies 
+  #hotel{
     color: #3ce800;
     font-size: 16px;
   }
@@ -212,7 +213,9 @@
   #chatApp,
   #countries,
   #jobs,
-  #movies {
+  #movies,
+  #hotel
+  {
     color: #3ce800;
     font-size: 18px;
   }
@@ -228,7 +231,8 @@
   #chatApp,
   #countries,
   #jobs,
-  #movies {
+  #movies,
+  #hotel {
     color: #3ce800;
     font-size: 20px;
   }
@@ -244,7 +248,8 @@
   #chatApp,
   #countries,
   #jobs,
-  #movies {
+  #movies ,
+  #hotel{
     color: #3ce800;
     font-size: 22px;
   }
@@ -260,7 +265,8 @@
   #chatApp,
   #countries,
   #jobs,
-  #movies {
+  #movies,
+  #hotel {
     color: #3ce800;
     font-size: 28px;
   }
@@ -276,7 +282,8 @@
   #chatApp,
   #countries,
   #jobs,
-  #movies {
+  #movies,
+  #hotel {
     color: #3ce800;
     font-size: 20 px;
   }
@@ -292,7 +299,8 @@
   #chatApp,
   #countries,
   #jobs,
-  #movies {
+  #movies ,
+  #hotel{
     color: #3ce800;
     font-size: 20px;
   }
